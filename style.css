@@ -24,7 +24,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px; 
+    padding: 5px 10px; 
     
 }
 
@@ -227,7 +227,8 @@ strong{
 }
 @media  screen and (max-width:600px) {
     .h2{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
+        padding: 5px;
     }
     .about-img h3{
         font-size:1rem ;
@@ -239,6 +240,7 @@ strong{
     }
     .about-des{
         width: 100%;
+        padding: 20px; 
     }
 
     .about-des h3{
@@ -373,8 +375,21 @@ strong{
     .review{
         flex-direction: column;
     }
+    .review .box-container{
+        padding: 15px;
+        gap: 10px;
+    }
     .review .box{
+        height: 23rem;
         width: 80%;
+        padding: 5px; 
+    }
+    .review .box .fa-quote-right{
+        font-size: 1.6rem;
+        right: 10px;
+    }
+    .review .box .stars{
+        bottom: 2px;
     }
 }
 /* review design ends here */
@@ -404,6 +419,7 @@ strong{
 .contact .contact-container .contact-details .h4{
     padding: 10px;
     margin: 5px;
+    font-size: 1.3rem;
 
 }
 .contact .contact-container .contact-details a{
