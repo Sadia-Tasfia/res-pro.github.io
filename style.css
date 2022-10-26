@@ -1,0 +1,490 @@
+html{
+    scroll-behavior:smooth ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.3s linear; 
+
+}
+:root{
+    --bg-color:rgb(190, 116, 128);
+    --bg-white: rgb(222, 216, 216);
+    --pink: #800f2f;
+    --black: rgb(36, 35, 35);
+    
+}
+
+  
+
+.navbar{
+    background-color: var(--bg-white); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px; 
+    
+}
+
+.nav-logo i{
+    color: var(--pink);
+    border: 2px solid white;
+    border-radius: 20%;
+    padding: 5px ;
+    margin-bottom: 10px;
+
+}
+strong{
+    font-size: 1.5rem;
+    color: var(--pink);
+    font-family: 'Dancing Script',cursive;
+    
+}
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.nav-menu a{
+    color: var(--pink);
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 5px;
+
+    
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+.icon i,a{
+    color: var(--pink);
+    padding: 5px;
+    margin: 2px;
+
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+@media screen  and (max-width:600px) {
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    .nav-menu{
+        flex-direction: column;
+    } 
+    .nav-menu a{
+     font-size:1rem;
+     text-align: center;
+   }
+    .nav-menu a:hover{
+        background-color: var(--bg-color);
+        border-radius: 3px ;
+    }
+} 
+/* header design ends here */
+
+
+/* banner design starts here */
+.banner-section{
+    background-image: url("image/res.jpg");
+    /* background-attachment: fixed;  */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+    display: flex;
+    justify-content: center;    
+    align-items: center;  
+  
+}
+.banner-contains{
+    padding: 50px 10px;
+    margin: 10px 5px;
+    height: 100vh;
+     /* width: 400px; */
+    text-align: center; 
+
+    
+   
+}
+ .banner-contains h1{
+    font-family: 'Handlee' , cursive;
+    padding: 15px;
+    color: #941436;
+    background-color:var(--bg-color);
+    border-radius: 5px;
+    font-size: 2.8rem;
+    
+
+} 
+.btn{
+    padding: 15px;
+    margin: 15px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 30px;
+
+    background-color: black;
+   color: white;
+    transition: 0.5s; 
+
+    
+}
+.btn:hover{
+    background-color:var(--bg-color);
+    color: #941436;
+    transform: scale(1.1);
+}
+@media screen and (max-width:600px) {
+    .banner-contains{
+        width: 220px;
+        
+        
+    }
+    .banner-contains h1{
+        padding: 5px;
+        font-size: 1.8rem;
+    }
+    .btn{
+        padding: 8px;
+        font-size: 1rem;
+        
+    }
+} 
+/* banner design ends here */
+
+
+/* about design starts here */
+.about{
+    text-align: center;
+    background-color: var(--bg-white);
+    color: black;
+    padding: 25px ;
+}
+
+.h2{
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+    color: var(--pink);
+    background-color: var(--bg-white);
+}
+.sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img{
+    display: flex;
+    flex-direction: column;
+  
+    
+}
+.about-img img {
+    padding: 5px ;
+    border: 5px solid white;
+    border-radius: 20%;
+    height: 25rem;
+
+}
+
+.about-des{
+    width: 50%;
+    padding: 35px;
+    margin: 10px;
+}
+.about-des h3{
+    font-size: 1.5rem;
+}
+.about-des p{
+    padding: 5px;
+    margin: 5px;
+    text-align: left;
+}
+.button{
+    font-size: 1.1rem;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+  
+}
+.button:hover{
+    background-color: var(--bg-color);
+    color: var(--pink);
+    transform: scale(1.2);
+    
+}
+@media  screen and (max-width:600px) {
+    .h2{
+        font-size: 1.2rem;
+    }
+    .about-img h3{
+        font-size:1rem ;
+    }
+    .sec{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-des{
+        width: 100%;
+    }
+
+    .about-des h3{
+        font-size:1rem ;
+    }
+    .about-des p{
+        text-align: center;
+    }
+    .about-img{
+        justify-content: center;
+        align-items: center;
+    }
+    .about-img img{
+        padding: 3px ;
+        border: 5px solid white;
+        border-radius: 10%;
+        width: 220px;
+        height: 220px;
+
+    }
+}
+/* about design ends here */
+
+
+/* menu card design starts here */
+.card-container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+
+   padding: 20px ; 
+   gap: 20px;
+   background-color: var(--bg-white);
+} 
+
+.card-container .box{
+    padding: 20px; 
+    text-align: center;
+    transition: 0.3s;
+    
+    
+} 
+.card-container .box:hover {
+    box-shadow: 2px 3px 3px rgb(190, 116, 128) ;
+}
+.card-img{
+    display: flex;
+    /* justify-content: center;
+    align-items: center;  */
+    padding: 15px; 
+}
+.card-img img{
+    padding: 15px ;
+    height: 25rem;
+}
+
+.card-img img:hover{
+    transform: scale(1.1);
+}
+.card-title h3{
+    background-color: var(--pink);
+    color: var(--bg-white);
+    border-radius: 5px;
+    padding: 5px;
+}
+.card-container .card-title .card-des{
+    font-size: 1.3rem;
+}
+@media screen and (max-width:600px) {
+    .card-img img{
+        padding: 5px;
+        height: 18rem;
+    }
+    .card-title h3{
+        font-size: 0.9rem;
+        border-radius: 2px;
+        padding: 2px;
+    }
+    .card-container .card-title .card-des{
+        font-size: 0.9rem;
+    }
+}
+
+/* card design ends here */
+
+
+/* review design starts here */
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     
+    padding: 25px ; 
+    gap: 20px;
+    background-color: var(--bg-white);
+
+}
+
+.review .box{
+    height: 20rem;
+    width: 20%;
+    padding: 15px;
+    border: 2px solid white;
+    transition: 0.3s;
+    position: relative;
+
+}
+.review .box:hover {
+    box-shadow: 2px 3px 3px rgb(190, 116, 128) ;
+}
+
+.review .box .fa-quote-right{
+    position: absolute;
+    font-size: 2.4rem;
+    right: 20px;
+    color: rgb(198, 193, 193);
+}
+.review .box .stars{
+    position: absolute;
+    color: var(--pink);
+
+    padding: 5px;
+    bottom: 20px;
+    transition: 0.2s; 
+}
+.review .box .stars:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:600px) {
+    .review{
+        flex-direction: column;
+    }
+    .review .box{
+        width: 80%;
+    }
+}
+/* review design ends here */
+
+
+/* contact design starts here */
+.contact .contact-container{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-white); 
+    padding: 15px;
+}
+
+.contact .contact-container .map iframe{
+    height: 25rem;
+    width: 40rem;
+    border-radius: 10px;
+   
+  
+}
+
+.contact .contact-container .contact-details{
+    font-size: 1.5rem;
+    padding: 25px;
+    text-align: left;
+}
+.contact .contact-container .contact-details .h4{
+    padding: 10px;
+    margin: 5px;
+
+}
+.contact .contact-container .contact-details a{
+    color: var(--black);
+}
+
+.contact .contact-container .contact-details .info .para ,h5{
+   padding: 10px;
+   margin: 5px;
+}
+
+
+
+ 
+@media screen and (max-width:600px) {
+    .contact .contact-container{
+        flex-direction: column;
+    }
+    .contact .contact-container .map iframe{
+       width: 100%;
+        
+    }
+    .contact .contact-container .contact-details{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .contact .contact-container .contact-details a{
+        font-size: small;
+    }
+}
+/* contact design ends here */
+
+
+/* footer design starts here */
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+    padding: 25px ; 
+    gap: 20px;
+    background-color: var(--bg-white);
+
+}
+.footer .box-container .box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    align-items: center;
+    padding: 10px;
+}
+.footer .box-container .box a{
+    display: flex;
+    color: var(--black);
+    font-size: 1.3rem;
+}
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+    color: var(--pink);
+  
+}
+.social-media{
+background-color: rgb(211, 211, 211);
+  padding: 20px;
+  color: var(--pink);
+  text-align: center;
+}
+.social-media a{
+    color: var(--pink);
+}
+.social-media a:hover{
+    text-decoration: underline;
+}
+@media  screen and (max-width:600px) {
+    .footer .box-container .box a{
+        font-size: 0.9rem;
+    }
+    .social-media a{
+        font-size: 1rem;
+    }
+}
+/* footer design ends here */
